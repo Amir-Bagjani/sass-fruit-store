@@ -1,0 +1,96 @@
+@import "config";
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: $box-shadow;
+
+    .logo{
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: $black;
+
+        i{
+            color: $orange;
+        }
+    }
+
+    .navbar a{
+        font-size: 1.7rem;
+        color: $black;
+        margin: 0 1rem;
+
+        &:hover{
+            color: $orange;
+        }
+    }
+
+    .icons div{
+        height: 4.5rem;
+        width: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        margin-right: 0.3rem;
+        background-color: #eee;
+        color: $black;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $orange;
+            color: #fff;
+        }
+    }
+
+    #menu-btn{
+        display: none;
+    }
+
+    .search-form{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 50rem;
+        height: 5rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: #fff;
+        box-shadow: $box-shadow;
+
+        &.active{
+            right: 2rem;
+        }
+
+        input{
+            width: 100%;
+            height: 100%;
+            text-transform: none;
+            background: none;
+            font-size: 1.6rem;
+            padding: 0 1.5rem;
+        }
+
+        label{
+            font-size: 2.2rem;
+            color: $black;
+            cursor: pointer;
+            padding-right: 1.5rem;
+
+            &:hover{
+                color: $orange;
+            }
+        }
+    }
+}

@@ -4,6 +4,7 @@ import FeatureSection from "./FeatureSection";
 import "../style/homePage.scss";
 import ProductsSection from "./ProductsSection";
 import CategoriesSection from "./CategoriesSection";
+import ReviewSection from "./ReviewSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <FeatureSection />
       <ProductsSection />
       <CategoriesSection />
+      <ReviewSection />
     </>
   )
 }

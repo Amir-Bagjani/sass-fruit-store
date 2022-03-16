@@ -1,5 +1,20 @@
 @import "config";
 
+%card-box{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    outline: $outline;
+    outline-offset: -1rem;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+
+    &:hover{
+        outline: $outline-hover;
+        outline-offset: 0;
+    }
+}
+
 .home{
     background: url(../../public/image/banner-bg.webp) no-repeat;
     background-position: center;
@@ -36,17 +51,7 @@
         @include grid(30rem);
 
         .box{
-            padding: 3rem 2rem;
-            text-align: center;
-            background-color: #fff;
-            outline: $outline;
-            outline-offset: -1rem;
-            box-shadow: $box-shadow;
-
-            &:hover{
-                outline-offset: 0;
-                outline: $outline-hover;
-            }
+            @extend %card-box;
 
             img{
                 margin: 1rem 0;
@@ -77,18 +82,7 @@
         }
 
         .box{
-            text-align: center;
-            padding: 3rem 2rem;
-            background-color: #fff;
-            border-radius: 0.5rem;
-            box-shadow: $box-shadow;
-            outline: $outline;
-            outline-offset: -1rem;
-
-            &:hover{
-                outline: $outline-hover;
-                outline-offset: 0;
-            }
+            @extend %card-box;
 
             img{
                 height: 20rem;
@@ -120,18 +114,7 @@
         @include grid(26rem);
 
         .box{
-            text-align: center;
-            padding: 3rem 2rem;
-            border-radius: 0.5rem;
-            background-color: #fff;
-            box-shadow: $box-shadow;
-            outline: $outline;
-            outline-offset: -1rem;
-
-            &:hover{
-                outline: $outline-hover;
-                outline-offset: 0;
-            }
+            @extend %card-box;
 
             img{
                 margin: 1rem;
@@ -149,6 +132,42 @@
                 padding: 1rem 0;
             }
 
+        }
+    }
+}
+
+.review{
+
+    .review-slider{
+        padding: 1rem;
+
+        .box{
+            @extend %card-box;
+
+            img{
+                height: 10rem;
+                width: 10rem;
+                border-radius: 50%;
+            }
+
+            p{
+                @include grap-text(1.5rem);
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+
+            h3{
+                padding: 1rem 0;
+                @include title-text(2.2rem);
+            }
+
+            .stars{
+                i{
+                    margin: 0 0.5rem;
+                    color: $orange;
+                    font-size: 1.7rem;
+                }
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ import FeatureSection from "./FeatureSection";
 
 import "../style/homePage.scss";
 import ProductsSection from "./ProductsSection";
+import CategoriesSection from "./CategoriesSection";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HomeSection />
       <FeatureSection />
       <ProductsSection />
+      <CategoriesSection />
     </>
   )
 }

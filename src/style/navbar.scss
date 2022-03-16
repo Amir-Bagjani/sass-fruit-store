@@ -215,6 +215,10 @@
 @media (max-width: 768px){
     .header{
 
+        .search-form{
+            width: 90%;
+        }
+
         #menu-btn{
             display: inline-block;
         }

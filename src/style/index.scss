@@ -47,6 +47,21 @@ section{
     }
 }
 
+.heading{
+    font-size: 3.5rem;
+    padding: 2rem 0 3rem 0;
+    color: $black;
+    text-align: center;
+
+    span{
+        color: #fff;
+        background-color: $orange;
+        padding: 0.5rem 3rem;
+        display: inline-block;
+        clip-path: polygon(50% 0%, 100% 0, 93% 50%, 100% 100%, 0 100%, 7% 50%, 0 0);
+    }
+}
+
 //media queries
 @media (max-width: 991px){
     html{
@@ -59,6 +74,9 @@ section{
 @media (max-width: 450px){
     html{
         font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
     }
 }
 

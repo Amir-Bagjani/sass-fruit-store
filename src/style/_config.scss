@@ -18,3 +18,8 @@ $outline-hover: 0.2rem solid var($black);
     font-size: $size;
     color: $light-color;
 }
+@mixin  grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5rem;
+}

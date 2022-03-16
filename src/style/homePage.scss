@@ -29,3 +29,40 @@
         }
     }
 }
+
+.features{
+
+    .box-container{
+        @include grid(30rem);
+
+        .box{
+            padding: 3rem 2rem;
+            text-align: center;
+            background-color: #fff;
+            outline: $outline;
+            outline-offset: -1rem;
+            box-shadow: $box-shadow;
+
+            &:hover{
+                outline-offset: 0;
+                outline: $outline-hover;
+            }
+
+            img{
+                margin: 1rem 0;
+                height: 15rem;
+            }
+
+            h3{
+                @include title-text(2.5rem);
+                line-height: 1.8;
+            }
+
+            p{
+                @include grap-text(1.5rem);
+                line-height: 1.8;
+                padding: 1.5rem 0;
+            }
+        }
+    }
+}

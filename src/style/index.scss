@@ -24,3 +24,33 @@ body{
     background-color: #eee;
 }
 
+//utilities
+.btn{
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid $black;
+    background: none;
+    color: $black;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $orange;
+        color: #fff;
+    }
+}
+
+//media queries
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+

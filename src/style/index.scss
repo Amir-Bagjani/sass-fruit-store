@@ -28,6 +28,9 @@ body{
 section{
     padding: 2rem 9%;
 }
+footer{
+    padding: 2rem 9%;
+}
 
 //utilities
 .btn{
@@ -68,6 +71,9 @@ section{
         font-size: 55%;
     }
     section{
+        padding: 2rem;
+    }
+    footer{
         padding: 2rem;
     }
 }

@@ -1,0 +1,101 @@
+@import "config";
+
+.footer{
+    background-color: #fff;
+
+    .box-container{
+        @include grid(26rem);
+
+        .box{
+
+            h3{
+                @include title-text(2.5rem);
+                padding: 1rem 0;
+
+                i{
+                    color: $orange;
+                }
+            }
+
+            p{
+                @include grap-text(1.5rem);
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+
+            .links{
+                display: block;
+                font-size: 1.5rem;
+                color: $light-color;
+                padding: 1rem 0;
+
+                i{
+                    color: $orange;
+                    margin-right: 0.5rem;
+                }
+
+                &:hover i{
+                    margin-right: 2rem;
+                }
+            }
+
+            .share a i{
+                height: 4rem;
+                width: 4rem;
+                line-height: 4rem;
+                text-align: center;
+                border-radius: 0.5rem;
+                font-size: 2rem;
+                color: $black;
+                margin-right: 1rem;
+                background-color: #ddd;
+
+                &:hover{
+                    color: #fff;
+                    background-color: $orange;
+                }
+            } 
+        }
+
+        .email{
+            margin: 0.7rem 0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            color: $black;
+            background-color: #ddd;
+            font-size: 1.6rem;
+            width: 100%;
+            text-transform: none;
+        }
+
+        .btn{
+            display: block;
+        }
+        
+        .payment{
+            margin-top: 2rem;
+            height: 3rem;
+        }
+    }
+
+    .credit{
+        text-align: center;
+        font-size: 2rem;
+        color: $black;
+        margin-top: 2rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+
+        span{
+            color: $orange;
+        }
+    }
+}
+
+@media (max-width: 450px){
+    .footer{
+        .box{
+            text-align: center;
+        }
+    }
+}

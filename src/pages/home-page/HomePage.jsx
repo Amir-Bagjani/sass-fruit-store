@@ -5,7 +5,7 @@ import CategoriesSection from "./CategoriesSection";
 import ReviewSection from "./ReviewSection";
 import BlogsSection from "./BlogsSection";
 
-import "../style/homePage.scss";
+import "../../style/homePage.scss";
 
 const HomePage = () => {
   return (
